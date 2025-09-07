@@ -2,8 +2,26 @@ import {Pet} from './Pet.js';
 import { autoDecreaseStatus } from './gameLogic.js'
 import {Dog} from './Dog.js'
 import {Cat} from './Cat.js'
+import { randomEvent } from './gameEvents.js'
 
 
+//やっほ
+
+const choko = new Dog('チョコ');
+window.choko = choko;
+console.log("--- 犬の初期状態 ---");
+// 継承されたメソッドと子クラス特有のメソッドを呼び出す
+console.log("\n--- 犬の行動 ---");
+choko.play();
+choko.bark();
+
+// 5秒ごとにランダムイベントを発生させる
+console.log("\n--- 5秒ごとにランダムイベントが発生します ---");
+setInterval(randomEvent, 5000);
+
+
+
+/* ... 
 // Petインスタンスの生成とメソッドの実行
 const myPet = new Pet('ポチ', '犬');
 
@@ -29,6 +47,7 @@ setTimeout(() => {
     myPet.getStatus();
 }, 5000);
 
+setInterval(randomEvent, 5000);
 
 // 別のペット（猫）のインスタンスを作成して操作
 const anotherPet = new Pet('タマ', '猫');
@@ -38,5 +57,4 @@ anotherPet.getStatus();
 anotherPet.feed();
 anotherPet.play();
 anotherPet.getStatus();
-
-//やっほ
+*/ 
