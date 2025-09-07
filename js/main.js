@@ -17,9 +17,10 @@ choko.bark();
 
 // 5秒ごとにランダムイベントを発生させる
 console.log("\n--- 5秒ごとにランダムイベントが発生します ---");
-setInterval(randomEvent, 5000);
-
-
+setInterval(() => {randomEvent(choko)}, 5000);
+//setIntervalの中で引数付き関数を呼び出す場合は、無名関数でラップする
+//setIntervalは返り値を持たないため　誤った例：setInterval(randomEvent(choko), 5000);
+choko.getStatus();
 
 /* ... 
 // Petインスタンスの生成とメソッドの実行
