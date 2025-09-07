@@ -3,9 +3,34 @@ import { autoDecreaseStatus } from './gameLogic.js'
 import {Dog} from './Dog.js'
 import {Cat} from './Cat.js'
 import { randomEvent } from './gameEvents.js'
+import {PetManager} from './PetManager.js'
+import {Item} from './Item.js'
+
+//グローバルスコープに公開
+window.Pet = Pet;
+window.autoDecreaseStatus = autoDecreaseStatus;
+window.Dog = Dog;
+window.Cat = Cat;
+window.randomEvent = randomEvent;
+window.PetManager = PetManager;
+window.Item = Item;
+window. 
 
 
-//やっほ
+addPet(Choko)
+items = [
+    new Item(1, 'ドッグフード', 'food', {hunger: 20}),
+    new Item(2, 'キャットフード', 'food', {hunger: 20}),
+    new Item(3, 'おもちゃ', 'toy', {energy: 15})
+]
+petManager = new PetManager([choko, mike], items);
+petManager.
+listAllPets()
+useItem(choko, 'ドッグフード')
+listAllPets()
+removePet(mike)
+
+
 
 const choko = new Dog('チョコ');
 window.choko = choko;
