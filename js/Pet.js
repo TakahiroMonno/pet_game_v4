@@ -31,7 +31,11 @@ export class Pet {
   }
 
   getStatus() {
-    // 現在の状態を出力する処理
-    console.log(`${this.name} (${this.type}) - 満腹度: ${this.hunger}, 元気度: ${this.energy}`);
+    console.log("--------------------");
+    console.log(`【${this.name}の状態】`);
+    console.log(`種類: ${this.type}`);
+    console.log(`満腹度: ${this.hunger}`);
+    console.log(`元気度: ${this.energy}`);
+    console.log("--------------------");
   }
 }
