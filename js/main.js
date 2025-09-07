@@ -1,5 +1,7 @@
 import {Pet} from './Pet.js';
 import { autoDecreaseStatus } from './gameLogic.js'
+import {Dog} from './Dog.js'
+import {Cat} from './Cat.js'
 
 
 // Petインスタンスの生成とメソッドの実行
